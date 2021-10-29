@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/fto0trn.css">
     <script src="https://kit.fontawesome.com/ae8dcf286c.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <section class="container">
@@ -16,50 +17,64 @@
             <div class="column-container">
                 <div class="column">
                     <h2>Controls:</h2>
-                    <form action="#" method="post">
+                    <form class="personForm" action="#" method="post">
                         <label>Persons name:</label>
                         <input type="text" placeholder="Persons name">
-                        <button type="submit">Add Person</button>
+                        <button>Add Person</button>
                     </form>
                     <div class="spacer">
 
                     </div>
-                    <form action="#" method="post">
+                    <form class="groupForm" action="#" method="post">
                         <label>Group name:</label>
                         <input type="text" placeholder="Group name">
-                        <button type="submit">Add Group</button>
+                        <button>Add Group</button>
                     </form>
                     <div class="spacer">
 
                     </div>
-                    <button type="submit" disabled>Generate Groups</button>
+                    <form class="settingsForm" action="#" method="post">
+                        <label>Group size:</label>
+                        <input type="number" placeholder="Group Size" value="4">
+                    </form>
+                    <div class="spacer">
+
+                    </div>
+                    <button class="resetBtn">Reset</button>
+                    <div class="spacer">
+
+                    </div>
+                    <button class="disabled generateBtn">Generate Groups</button>
                 </div>
                 <div class="column">
                     <h2>People:</h2>
-                    <ul>
-                        <li class="person">Lasse</li>
-                        <li class="person">Lasse</li>
-                        <li class="person">Lasse</li>
-                        <li class="person">Lasse</li>
-                        <li class="person">Lasse</li>
-                        <li class="person">Lasse</li>
+                    <ul class="peopleList">
+                        <li class="warning"><i>People you add will be visible here.</i></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h2>Groups:</h2>
-                    <ul>
-                        <li class="group">
-                            <span>AlkoHold</span>
-                            <i class="fas fa-plus"></i>
-                        </li>
-                        <li class="group">
-                            <span>AlkoHold</span>
-                            <i class="fas fa-plus"></i>
-                        </li>
+                    <ul class="groupList">
+                        <li class="warning"><i>People you add will be visible here.</i></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="modalBackground">
+        <div class="modal">
+            <div class="modalHeader">
+                <h2 class="modalTitle">%group title%</h2>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="modalContent">
+                <ul class="modalList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
