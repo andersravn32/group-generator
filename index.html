@@ -7,14 +7,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/fto0trn.css">
+    <script src="https://kit.fontawesome.com/ae8dcf286c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="container">
         <div class="inner">
             <h1>Random Group Generator</h1>
+            <div class="column-container">
+                <div class="column">
+                    <h2>Controls:</h2>
+                    <form action="#" method="post">
+                        <label>Persons name:</label>
+                        <input type="text" placeholder="Persons name">
+                        <button type="submit">Add Person</button>
+                    </form>
+                    <div class="spacer">
 
-            <input value="Hello World">
-            <button>Hello</button>
+                    </div>
+                    <form action="#" method="post">
+                        <label>Group name:</label>
+                        <input type="text" placeholder="Group name">
+                        <button type="submit">Add Group</button>
+                    </form>
+                    <div class="spacer">
+
+                    </div>
+                    <button type="submit" disabled>Generate Groups</button>
+                </div>
+                <div class="column">
+                    <h2>People:</h2>
+                    <ul>
+                        <li class="person">Lasse</li>
+                        <li class="person">Lasse</li>
+                        <li class="person">Lasse</li>
+                        <li class="person">Lasse</li>
+                        <li class="person">Lasse</li>
+                        <li class="person">Lasse</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>Groups:</h2>
+                    <ul>
+                        <li class="group">
+                            <span>AlkoHold</span>
+                            <i class="fas fa-plus"></i>
+                        </li>
+                        <li class="group">
+                            <span>AlkoHold</span>
+                            <i class="fas fa-plus"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </body>

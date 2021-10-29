@@ -20,26 +20,93 @@
     background-color:white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 15px;
+    border-radius: 10px;
 }
 
 .inner h1{
     border-bottom:1px solid rgba(0, 0, 0, 0.16);
-    padding-bottom:5px;
+    padding-bottom:10px;
+    margin-bottom:10px;
 }
+
 
 input{
     padding:8px 12px;
-    border-radius: 15px;
-    font-size:1em;
+    border-radius: 10px;
+    font-size:.8em;
     border:1px solid rgba(0, 0, 0, 0.16);
     outline:none;
 } 
 
+
+.inner h2{
+    font-size:1.1em;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+label{
+    font-size:.8em;
+}
 button{
     padding:8px 12px;
-    border-radius: 15px;
-    font-size:1em;
-    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size:.8em;
+    background-color: #2cbc63;
+    border:1px solid rgba(0, 0, 0, 0.16);
     border:none;
     outline:none;
+    width:100%;
+}
+
+.column-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:15px;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.spacer{
+    margin-top:15px;
+    margin-bottom:15px;
+    width:100%;
+    height:1px;
+    background-color:rgba(0, 0, 0, 0.16);
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+.person{
+    width:100%;
+    padding:8px 12px;
+    border-radius: 10px;
+    font-size:.8em;
+    background-color: whitesmoke;
+    border:1px solid rgba(0, 0, 0, 0.16);
+    margin-bottom:10px;
+}
+
+.group{
+    width:100%;
+    padding:8px 12px;
+    border-radius: 10px;
+    font-size:.8em;
+    background-color: whitesmoke;
+    border:1px solid rgba(0, 0, 0, 0.16);
+    margin-bottom:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
 }
